@@ -1,29 +1,28 @@
-const student = [
-    {name:"Rupesh",
-    marks: 90},
+const Student =[
+    {name: "Rupesh",
+    marks: 50},
 
-    {name:"Ritesh",
-    marks: 40},
+    {name: "Ritesh",
+    marks: 80},
 
-    {name:"Parth",
-    marks: 60},
+    {name: "Rakesh",
+    marks: 50},
 
-    {name:"Utkasrh",
-    marks: 75},
+    {name: "Rajesh",
+    marks: 65},
+
 ]
 
-// console.log(name)
-function checkResult(std){
-    if(student[keys] == std){
-        if(student[marks] > 90){
-            console.log(`${std} is passed in exam`)
-        }else{
-            console.log(`${std} is faild in exam`)
-        }
+const rupesh = [3,4,5,6,7]
+
+function checkResult(names){
+   for (let students of Student){
+    if(students.name === names){
+    return   students.marks >= 65? console.log(`Congratulations!! ${names} is passed in exam`): console.log('Sorry you have not cleared exam')
     }
-    else{
-        console.log(`${std} is invalid Student name`)
     }
-}
+    console.log(`${names} is invalid user`)
+   }
 
 checkResult("Ritesh")
+
